@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FASHION</title>
+    <link rel="stylesheet" href="fashion.css">
+    <link rel="shortcut icon" href="logo.jpg" />
+</head>
+
+<body>
+    <header>
+
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">RIA FASHION</h1>
+        <nav>
+
+            <ul>
+                <input class="search" type="text" placeholder="Search...">
+                <input class="search" type="button" value="Search">
+                </form>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Hubungi Kami</a></li>
+                <form>
+
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Produk Kami</h2>
+        <ul class="products">
+            <li>
+                <img src="foto.jpeg" onclick="this.style.width='500px'" width="250" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Harga: Rp. 100.000</p>
+                <button class="buy-button" onclick="addToCart(1)">Tambah ke Keranjang</button>
+            </li>
+            <li>
+                <img src="foto2.jpg" width="250" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Harga: Rp. 150.000</p>
+                <button class="buy-button" onclick="addToCart(2)">Tambah ke Keranjang</button>
+            </li>
+            <li>
+                <img src="foto2.webp" width="250" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Harga: Rp. 200.000</p>
+                <button class="buy-button" onclick="addToCart(3)">Tambah ke Keranjang</button>
+            </li>
+            <li>
+                <img src="foto2.jpg" width="250" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Harga: Rp. 150.000</p>
+                <button class="buy-button" onclick="addToCart(2)">Tambah ke Keranjang</button>
+            </li>
+            <li>
+                <img src="foto3.jpeg" width="250" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Harga: Rp. 150.000</p>
+                <button class="buy-button" onclick="addToCart(2)">Tambah ke Keranjang</button>
+            </li>
+            <li>
+                <img src="foto4.jpg" width="250" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Harga: Rp. 150.000</p>
+                <button class="buy-button" onclick="addToCart(2)">Tambah ke Keranjang</button>
+            </li>
+            <div class="cart">
+                <h2>Keranjang</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Harga</th>
+                            <th>Jumlah</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Cart items will be added here -->
+                    </tbody>
+                </table>
+                <p id="total-price">Total: Rp. 0</p>
+                <button id="checkout-button" disabled>Checkout</button>
+            </div>
+    </main>
+    <footer>
+        Copyright &copy; Ria Fashion
+    </footer>
+    <script src="script.js"></script>
+</body>
